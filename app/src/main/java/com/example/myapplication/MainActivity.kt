@@ -20,10 +20,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         with(binding){
-
-            email
-
-            password
             login.setOnClickListener {
                 chamadaApi(email.text.toString(), password.text.toString())
             }
